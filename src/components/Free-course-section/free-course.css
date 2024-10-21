@@ -1,0 +1,84 @@
+/* Section Title */
+h2.fw-bold {
+  font-size: 2rem;
+  color: #0a2b1e;
+  margin-bottom: 40px;
+}
+
+/* Single Free Course Card */
+.single__free__course {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single__free__course:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Course Image */
+.free__course__img {
+  position: relative;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.free__course__img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.free__btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 12px;
+  background-color: #17bf9e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.free__btn:hover {
+  background-color: #0a2b1e;
+}
+
+/* Course Details */
+.free__course__details {
+  padding: 20px;
+}
+
+.free__course__details h6 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a2b1e;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.free__course__details h6:hover {
+  color: #17bf9e;
+}
+
+/* Stats (Students and Rating) */
+.free__course__details .d-flex span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.free__course__details i {
+  color: #17bf9e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .single__free__course {
+    margin-bottom: 20px;
+  }
+}

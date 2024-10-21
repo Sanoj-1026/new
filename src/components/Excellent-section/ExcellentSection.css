@@ -1,0 +1,40 @@
+.excellence-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title-underline {
+    width: 100px;
+    height: 2px;
+    background-color: red;
+    margin: 0 auto 20px;
+  }
+  
+  .excellence-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .excellence-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+  }
+  
+  .excellence-item .icon {
+    font-size: 40px; /* Replace this with your actual icon styling */
+    margin-bottom: 10px;
+  }
+  
+  .excellence-item h3 {
+    margin: 10px 0;
+  }
+  
+  .excellence-item p {
+    font-size: 14px;
+    white-space: pre-line; /* To handle the newline in subtitle */
+  }
+  

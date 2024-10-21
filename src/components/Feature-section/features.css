@@ -1,0 +1,55 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 0;
+  background-color: #f8f9fa; /* Light grey background for the section */
+}
+
+/* Container Styling */
+.single__feature {
+  margin: 20px 0;
+  padding: 30px 20px;
+  background-color: hsl(167, 100%, 93%); /* White background for each feature box */
+  border-radius: 10px; /* Rounded corners for the feature boxes */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.single__feature:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.single__feature h2 i {
+  font-size: 36px;
+  color: #007bff; /* Bootstrap primary color */
+  margin-bottom: 15px;
+}
+
+/* Title Styling */
+.single__feature h6 {
+  font-size: 1.25rem;
+  color: #333; /* Dark grey for text */
+  margin-bottom: 10px;
+}
+
+/* Description Text */
+.single__feature p {
+  color: #666; /* Lighter text color for readability */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Grid */
+@media (max-width: 992px) {
+  .single__feature {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,107 @@
+/* Course Section Styling */
+.course__top {
+  margin-bottom: 5px;
+  position: relative;
+  display: flex;
+}
+
+.course__top__left h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.course__top__left p {
+  color: #666;
+}
+
+.course__top button {
+  padding: 10px 20px;
+  background-color: #bf1717;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.course__top button:hover {
+  background-color: #0a2b1e;
+  color: #fff;
+}
+
+/* Single Course Item */
+.single__course__item {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.single__course__item:hover {
+  transform: translateY(-25px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Course Image */
+.course__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Course Details */
+.course__details {
+  padding: 20px;
+}
+
+.course__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a2b1e;
+  transition: color 0.3s ease;
+}
+
+.course__title:hover {
+  color: #e20a0a;
+}
+
+/* Lessons, Students, and Rating */
+.lesson, .students, .rating {
+  font-size: 1rem;
+  color: #666;
+}
+
+.lesson i, .students i, .rating i {
+  color: #17bf9e;
+}
+
+/* Enroll Now Button */
+.enroll a {
+  font-weight: 600;
+  color: #17bf9e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.enroll a:hover {
+  color: #0a2b1e;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course__top {
+    flex-direction: column;
+  }
+
+  .single__course__item {
+    margin-bottom: 20px;
+  }
+
+  .course__top button {
+    width: 100%;
+  }
+}

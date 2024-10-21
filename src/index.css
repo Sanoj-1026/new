@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;500;600;700;800&display=swap");
+
+/* =========== base style ========= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section,
+footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2rem;
+  line-height: 50px;
+  font-family: "Poppins", sans-serif;
+  color: #0a2b1e;
+  font-weight: 600;
+}
+
+p {
+  color: #3c4642;
+  font-size: 1rem;
+  line-height: 35px;
+  font-family: "Andada Pro", serif;
+  font-weight: 400;
+}
+
+button.btn {
+  background: #ff0000; /* Default background color (red) */
+  color: #fff; /* Text color (white) */
+  padding: 7px 25px; /* Padding for the button */
+  border-radius: 50px; /* Rounded corners */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+button.btn:hover {
+  background: #e60000; /* Darker shade of red on hover */
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+
+i {
+  color: #17bf9e;
+}

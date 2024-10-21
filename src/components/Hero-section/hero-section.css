@@ -1,0 +1,54 @@
+.hero__content h2 {
+    font-weight: 600;
+    line-height: 55px;
+  }
+  
+  .hero__content {
+    padding-top: 80px;
+  }
+  .search input {
+    border: none;
+    outline: none;
+    padding: 7px 10%;
+  }
+  
+  .search {
+    width: 60%;
+    border: 1px solid #00ffcc44;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    margin-top: 20px;
+  }
+
+  .button {
+    background-color: #073e63; /* Button's default background color */
+    color: white; /* Button's default text color */
+    padding: 10px 20px; /* Button's padding */
+    border: none; /* Removes the border */
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer; /* Pointer cursor when hovering */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .button:hover {
+    background-color: #ff0000; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+  }
+  
+  .btn {
+    background-color: #ff0000; /* Default background color */
+    color: rgb(245, 245, 245); /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .btn:hover {
+    background-color: #14a885; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+  }
+  

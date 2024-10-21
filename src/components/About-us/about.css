@@ -1,0 +1,54 @@
+/* About Image Styling */
+.about__img {
+  position: relative; /* Enables positioning of the image */
+  display: flex; /* Centers the image horizontally */
+  justify-content: center;
+  margin-bottom: 20px; /* Add some spacing between the image and content */
+}
+
+.about__img img {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(14, 153, 153, 0.1);
+  position: relative;
+  top: 20px; /* Moves the image down */
+  transform: translateY(20px); /* Ensures the image moves down and is centered */
+}
+
+/* Counter Section */
+.about__counter {
+  margin-top: 50px; /* Add more space above counters */
+}
+
+.single__counter {
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Animation */
+.single__counter:hover {
+  background-color: #92e9da;
+  border-radius: 8px;
+  transform: translateY(-25px); /* Lift the counter on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .about__content {
+    text-align: center;
+    font-style: italic;
+  }
+
+  .about__counter .d-flex {
+    flex-direction: column;
+  }
+
+  .about__counter {
+    margin-top: 20px;
+  }
+
+  .single__counter {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,131 @@
+/* Base Styles for Header */
+.header {
+  padding: 15px 0;
+  background-color: #0a2b1e;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.header .logo h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #17bf9e;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .logo h2 i {
+  font-size: 1.8rem;
+  color: #17bf9e;
+}
+
+/* Navigation Menu */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav__menu {
+  position: relative;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav__item {
+  position: relative; /* Required for dropdown */
+}
+
+.nav__item a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav__item a:hover {
+  color: #17bf9e;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0a2b1e;
+  padding: 10px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav__item:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.dropdown a:hover {
+  background-color: rgba(23, 191, 158, 0.2);
+}
+
+/* Contact Info */
+.nav__right p {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.nav__right i {
+  font-size: 1.2rem;
+  color: #17bf9e;
+}
+
+/* Mobile Menu Icon */
+.mobile__menu {
+  display: none;
+}
+
+.mobile__menu i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .nav__menu {
+    display: none;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 10px 0;
+  }
+
+  .logo h2 {
+    font-size: 1.25rem;
+  }
+
+  .nav__right p {
+    font-size: 0.9rem;
+  }
+}
